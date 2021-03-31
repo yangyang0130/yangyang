@@ -16,9 +16,7 @@ import android.widget.RelativeLayout;
 import com.yangyang.rkq.R;
 
 
-/**
- * Created by Administrator on 2019/11/17.
- */
+
 //发布功能
 public class PublishDialog extends Dialog {
     private RelativeLayout mPublishMainRlmian;

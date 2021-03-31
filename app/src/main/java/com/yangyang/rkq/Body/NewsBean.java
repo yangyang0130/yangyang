@@ -1,60 +1,62 @@
 package com.yangyang.rkq.Body;
+
+import java.util.PropertyResourceBundle;
+
 //创建JAVABean，保存新闻数据。
 public class NewsBean {
-    private String title;  //标题
-    private String date;   //时间
-    private String author_name;   //来源——作者名字
-    private String thumbnail_pic_s;   //头像
-    private String url;     //具体的内容
+    private String newsTitle;//新闻标题
+    private String newsDate; //新闻发布时间
+    private String newsImgUrl; // 新闻图片Url地址
+    private String newsUrl; //新闻详情Url地址
+    private String newsTime;    //
 
-    public String getTitle() {
-        return title;
+    public String getNewsTitle() {
+        return newsTitle;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setNewsTitle(String newsTitle) {
+        this.newsTitle = newsTitle;
     }
 
-    public String getDate() {
-        return date;
+    public String getNewsDate() {
+        return newsDate;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setNewsDate(String newsDate) {
+        this.newsDate = newsDate;
     }
 
-    public String getAuthor_name() {
-        return author_name;
+    public String getNewsImgUrl() {
+        return newsImgUrl;
     }
 
-    public void setAuthor_name(String author_name) {
-        this.author_name = author_name;
+    public void setNewsImgUrl(String newsImgUrl) {
+        this.newsImgUrl = newsImgUrl;
     }
 
-    public String getThumbnail_pic_s() {
-        return thumbnail_pic_s;
+    public String getNewsUrl() {
+        return newsUrl;
     }
 
-    public void setThumbnail_pic_s(String thumbnail_pic_s) {
-        this.thumbnail_pic_s = thumbnail_pic_s;
+    public void setNewsUrl(String newsUrl) {
+        this.newsUrl = newsUrl;
     }
 
-    public String getUrl() {
-        return url;
+    public String getNewsTime() {
+        return newsTime;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setNewsTime(String newsTime) {
+        this.newsTime = newsTime;
     }
 
     @Override
     public String toString() {
         return "NewsBean{" +
-                "title='" + title + '\'' +
-                ", date='" + date + '\'' +
-                ", author_name='" + author_name + '\'' +
-                ", thumbnail_pic_s='" + thumbnail_pic_s + '\'' +
-                ", url='" + url + '\'' +
+                "newsTitle='" + newsTitle + '\'' +
+                ", newsDate='" + newsDate + '\'' +
+                ", newsImgUrl='" + newsImgUrl + '\'' +
+                ", newsUrl='" + newsUrl + '\'' +
                 '}';
     }
 }

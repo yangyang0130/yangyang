@@ -1,81 +1,75 @@
 package com.yangyang.rkq.adapter;
 
-
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.yangyang.rkq.Body.NewsBean;
 import com.yangyang.rkq.R;
-import com.yangyang.rkq.Utils.ImageTask;
-import com.youth.banner.loader.ImageLoader;
+import com.yangyang.rkq.Utils.ImageHelper;
 
 import java.util.List;
 
-public class NewsAdapter extends ArrayAdapter<NewsBean> {
-    private int item_layout_id;
-    public NewsAdapter(Context context, int resource, List objects) {
-        super(context, resource,objects);
-        item_layout_id=resource;
+public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+    private final Context mContext;
+    private List<NewsBean> mList;
+
+    public NewsAdapter(Context mContext) {
+        this.mContext = mContext;
+
     }
+
+    public void setList(List<NewsBean> mList) {
+        this.mList = mList;
+        notifyDataSetChanged();
+    }
+
+
     @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View view=null;
-        final  ViewHolder holder;
-        if(convertView==null){//回收站为空\
-            /**
-             * LayoutInflater.from()得到布局填充器对象
-             * getContext()获取当前上下文
-             * inflate() 加载填充布局
-             */
-            view= LayoutInflater.from(getContext())
-                    .inflate(item_layout_id,parent,false);
-            holder=new ViewHolder(view);
-            view.setTag(holder);
-
-        }else {//显示后续的列表项
-            view=convertView;
-            holder= (ViewHolder) view.getTag();
-        }
-        NewsBean itemData=getItem(position);
-        holder.title.setText(itemData.getTitle());
-        holder.date.setText(itemData.getDate());
-        holder.author_name.setText(itemData.getAuthor_name());
-        if(!TextUtils.isEmpty(itemData.getThumbnail_pic_s())){
-            new ImageTask(new ImageTask.CallBack() {
-                @Override
-                public void getResults(Bitmap result) {
-                    holder.thumbnail_pic_s.setImageBitmap(result);
-
-
-                }
-            }).execute(itemData.getThumbnail_pic_s()) ;  //执行异步任务
-        }else{
-            holder.thumbnail_pic_s.setVisibility(View.GONE);
-        }
-        return view;
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(mContext).inflate(R.layout.activity_circle_item, parent, false);
+        return new NewsAdapter.DataViewHolder(view);
     }
-    class  ViewHolder{
-        TextView title;
-        TextView date;
-        TextView author_name;
-        ImageView thumbnail_pic_s;
 
-        public ViewHolder(View view) {
-            title=(TextView) view.findViewById(R.id.title);
-            date=(TextView)view.findViewById(R.id.date);
-            author_name=(TextView)view.findViewById(R.id.author_name);
-            thumbnail_pic_s=(ImageView)view.findViewById(R.id.imgsrc);
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+        DataViewHolder dataViewHolder= (DataViewHolder) holder;
+        dataViewHolder.data.setText(mList.get(position).getNewsDate());
+        dataViewHolder.createTime.setText(mList.get(position).getNewsTime());
+        Glide.with(mContext)
+                .load(mList.get(position).getNewsImgUrl())
+                .placeholder(R.drawable.ic_loading)
+                .error(R.drawable.ic_failed_to_load)
+                .into(dataViewHolder.imageView);
+        dataViewHolder.title.setText(mList.get(position).getNewsTitle());
+    }
+
+    @Override
+    public int getItemCount() {
+        return mList == null ? 0 : mList.size();
+    }
+
+    public class DataViewHolder extends RecyclerView.ViewHolder {
+
+        private TextView title;
+        private TextView data;
+        private TextView createTime;
+        private ImageView imageView;
+
+        public DataViewHolder(@NonNull View itemView) {
+            super(itemView);
+            title = itemView.findViewById(R.id.title);
+            data = itemView.findViewById(R.id.data);
+            createTime = itemView.findViewById(R.id.time);
+            imageView = itemView.findViewById(R.id.imageView);
         }
     }
 }

@@ -6,9 +6,6 @@ import android.util.AttributeSet;
 
 import androidx.core.widget.NestedScrollView;
 
-/**
- * Created by yy on 2020/5/26.
- */
 
 public class AnimationNestedScrollView extends NestedScrollView {
     private OnAnimationScrollChangeListener listener;
