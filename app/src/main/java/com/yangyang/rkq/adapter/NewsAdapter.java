@@ -12,24 +12,23 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.yangyang.rkq.Body.NewsBean;
+import com.yangyang.rkq.Frament.Fragment_circle;
 import com.yangyang.rkq.R;
 import com.yangyang.rkq.Utils.ImageHelper;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Context mContext;
-    private List<NewsBean> mList;
+    private List<NewsBean> mList =new ArrayList<NewsBean>();
 
-    public NewsAdapter(Context mContext) {
+    public NewsAdapter(Context mContext, List<NewsBean> mList) {
         this.mContext = mContext;
-
-    }
-
-    public void setList(List<NewsBean> mList) {
         this.mList = mList;
-        notifyDataSetChanged();
+
     }
+
 
 
     @NonNull

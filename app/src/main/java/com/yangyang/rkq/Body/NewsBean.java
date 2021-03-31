@@ -5,10 +5,10 @@ import java.util.PropertyResourceBundle;
 //创建JAVABean，保存新闻数据。
 public class NewsBean {
     private String newsTitle;//新闻标题
-    private String newsDate; //新闻发布时间
+    private String newsDate; //新闻发布来源
     private String newsImgUrl; // 新闻图片Url地址
     private String newsUrl; //新闻详情Url地址
-    private String newsTime;//时间
+    private String newsTime;//新闻发布时间
 
     public String getNewsTitle() {
         return newsTitle;
