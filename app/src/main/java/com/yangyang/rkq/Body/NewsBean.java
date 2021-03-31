@@ -8,7 +8,7 @@ public class NewsBean {
     private String newsDate; //新闻发布时间
     private String newsImgUrl; // 新闻图片Url地址
     private String newsUrl; //新闻详情Url地址
-    private String newsTime;    //
+    private String newsTime;//时间
 
     public String getNewsTitle() {
         return newsTitle;
