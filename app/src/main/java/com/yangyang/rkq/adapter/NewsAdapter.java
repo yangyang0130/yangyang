@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,14 +22,21 @@ import java.util.List;
 
 public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Context mContext;
-    private List<NewsBean> mList =new ArrayList<NewsBean>();
+    private List<NewsBean> mList = new ArrayList<NewsBean>();
 
     public NewsAdapter(Context mContext, List<NewsBean> mList) {
         this.mContext = mContext;
         this.mList = mList;
 
     }
+    public List<NewsBean> getList() {
+        return mList;
+    }
 
+    public void setList(List<NewsBean> mList) {
+        this.mList = mList;
+        notifyDataSetChanged();
+    }
 
 
     @NonNull
@@ -40,7 +48,7 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        DataViewHolder dataViewHolder= (DataViewHolder) holder;
+        DataViewHolder dataViewHolder = (DataViewHolder) holder;
         dataViewHolder.data.setText(mList.get(position).getNewsDate());
         dataViewHolder.createTime.setText(mList.get(position).getNewsTime());
         Glide.with(mContext)
@@ -49,6 +57,12 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 .error(R.drawable.ic_failed_to_load)
                 .into(dataViewHolder.imageView);
         dataViewHolder.title.setText(mList.get(position).getNewsTitle());
+        dataViewHolder.llView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.itemOnClick(position);
+            }
+        });
     }
 
     @Override
@@ -62,6 +76,7 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         private TextView data;
         private TextView createTime;
         private ImageView imageView;
+        private final LinearLayout llView;
 
         public DataViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -69,6 +84,21 @@ public class NewsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             data = itemView.findViewById(R.id.data);
             createTime = itemView.findViewById(R.id.time);
             imageView = itemView.findViewById(R.id.imageView);
+            llView = itemView.findViewById(R.id.llView);
         }
+    }
+
+    public interface Listener {
+        /**
+         * item点击事件
+         */
+        void itemOnClick(int position);
+
+    }
+
+    private Listener mListener;
+
+    public void setListener(Listener mListener) {
+        this.mListener = mListener;
     }
 }

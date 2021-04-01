@@ -58,6 +58,9 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.4.1'
      //volley
     implementation 'com.android.volley:volley:1.1.1'
-
-
+    //核心必须依赖----下拉刷新上拉加载
+    implementation  'com.scwang.smart:refresh-layout-kernel:2.0.1'      //核心必须依赖
+    implementation  'com.scwang.smart:refresh-header-classics:2.0.1'    //经典刷新头
+    implementation  'com.scwang.smart:refresh-footer-ball:2.0.1'        //球脉冲加载
+    implementation  'com.scwang.smart:refresh-header-radar:2.0.1'       //雷达刷新头
 }
