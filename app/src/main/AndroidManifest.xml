@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".activity.SearchActivity"/>
         <activity android:name=".activity.NewInfoAty"/>
+        <activity android:name=".activity.ResultInquiryAty"/>
+
     </application>
 
 

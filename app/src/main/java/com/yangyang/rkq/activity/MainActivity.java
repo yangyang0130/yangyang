@@ -71,6 +71,10 @@ public class MainActivity extends FragmentActivity {
                 }
             }
         });
+
+        getApplicationContext();
+        getBaseContext();
+
     }
 
     public void setTabSelection(int index) {
@@ -136,5 +140,10 @@ public class MainActivity extends FragmentActivity {
         if (frg_user != null) {
             transaction.hide(frg_user);
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

@@ -14,9 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -33,6 +31,7 @@ import com.yangyang.rkq.R;
 import com.yangyang.rkq.Utils.CommonUtil;
 import com.yangyang.rkq.View.AnimationNestedScrollView;
 import com.yangyang.rkq.View.PublishDialog;
+import com.yangyang.rkq.activity.ResultInquiryAty;
 import com.yangyang.rkq.activity.ScanActivity;
 import com.yangyang.rkq.activity.SearchActivity;
 import com.youth.banner.Banner;
@@ -44,6 +43,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Fragment_home extends Fragment implements View.OnClickListener {
+
     private TextBannerView tvBanner;
     private View mView;
     private GridView gridView, gridViewFound;
@@ -87,7 +87,7 @@ public class Fragment_home extends Fragment implements View.OnClickListener {
         sv_view = (AnimationNestedScrollView) mView.findViewById(R.id.search_sv_view);
         ll_search = (LinearLayout) mView.findViewById(R.id.search_ll_search);//搜索
         tv_title_school = (TextView) mView.findViewById(R.id.tv_title_school);//学校名称
-        iv_school=mView.findViewById(R.id.iv_school);//学校校徽
+        iv_school = mView.findViewById(R.id.iv_school);//学校校徽
         banner = (Banner) mView.findViewById(R.id.banner);
     }
 
@@ -97,7 +97,6 @@ public class Fragment_home extends Fragment implements View.OnClickListener {
         tv_title_school.setOnClickListener(this);
         search_ll_search.setOnClickListener(this);
     }
-
 
 
     //搜索框伸缩
@@ -146,8 +145,8 @@ public class Fragment_home extends Fragment implements View.OnClickListener {
     //轮播图
     private void initBanner() {
         List<Integer> images = new ArrayList<>();
-        images.add( R.drawable.image8);
-        images.add( R.drawable.image9);
+        images.add(R.drawable.image8);
+        images.add(R.drawable.image9);
         images.add(R.drawable.image10);
         images.add(R.drawable.image11);
         images.add(R.drawable.image12);
@@ -190,13 +189,13 @@ public class Fragment_home extends Fragment implements View.OnClickListener {
                 map.put("ItemText", "人科跑腿");
 
             } else if (i == 6) {
-                map.put("ItemImage", R.mipmap.flea );
+                map.put("ItemImage", R.mipmap.flea);
                 map.put("ItemText", "跳蚤市场");
 
             } else if (i == 7) {
                 map.put("ItemImage", R.mipmap.performance);
                 map.put("ItemText", "成绩查询");
-            }else if (i==8){
+            } else if (i == 8) {
                 map.put("ItemImage", R.mipmap.more);
                 map.put("ItemText", "更多");
             }
@@ -208,7 +207,8 @@ public class Fragment_home extends Fragment implements View.OnClickListener {
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                     long arg3) {
                 int index = arg2 + 1;// id是从0开始的，所以需要+1
-                if (index == 1) {
+                if (index == 7) {
+                    ResultInquiryAty.start(getContext(), "http://cet.neea.edu.cn/cet/");
                 }
             }
         });
@@ -234,7 +234,6 @@ public class Fragment_home extends Fragment implements View.OnClickListener {
     }
 
 
-
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -258,7 +257,6 @@ public class Fragment_home extends Fragment implements View.OnClickListener {
                         @Override
                         public void onClick(View v) {
                             Toast.makeText(getActivity(), "拍摄", Toast.LENGTH_SHORT).show();
-
                         }
                     });
                 }
