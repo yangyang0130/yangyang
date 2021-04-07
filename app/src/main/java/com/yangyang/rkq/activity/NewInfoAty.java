@@ -10,9 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.yangyang.rkq.R;
+import com.yangyang.rkq.base.MyActivity;
 import com.yangyang.rkq.base.MyApplication;
 
-public class NewInfoAty extends AppCompatActivity {
+/**
+ * 新闻详情
+ */
+
+public class NewInfoAty extends MyActivity {
     private WebView wv_content;
 
 

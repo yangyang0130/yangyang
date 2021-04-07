@@ -1,7 +1,7 @@
 package com.yangyang.rkq.Body;
 
 /**
- * Created by yy on 2020/6/6.
+ * 搜索实体类
  */
 
 public class SearchBean {

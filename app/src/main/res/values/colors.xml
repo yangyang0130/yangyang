@@ -291,5 +291,15 @@
     <color name="navy">#000080</color><!--海军色 -->
 
     <color name="black">#000000</color><!--黑色 -->
+    <!-- scanner -->
+    <color name="scan_mask">#60000000</color>
+    <color name="scan_laser">#69aafc</color>
+    <color name="scan_dot">#ff6600</color>
+    <color name="scan_result_view">#b0000000</color>
+    <color name="scan_result_dots">#c099cc00</color>
+
+    <color name="black_color">#000000</color>
+    <color name="white_normal">#ffffffff</color>
+    <color name="global_color">#F7F7F8</color>
 
 </resources>

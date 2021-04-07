@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e7e7e7"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户使用许可及服务协议"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="人科圈服务协议"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="          人科圈由重庆人文科技学院大良辰工作室（以下“本软件，本工作室”均指人科圈及重庆人文科技学院大良辰工作室）。在您注册成为人科圈用户前请务必仔细阅读以下条款。若您一旦注册，则表示您同意接受本软件的服务并受以下条款的约束。若您不接受以下条款，请您立即停止注册或主动停止使用本软件的服务。" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="一、 本协议的签署和修订"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="
+        1.1用户承诺其为具有完全民事行为能力的民事主体,且具有达成交易履行其义务的能力\n
+        1.2本协议内容包括以下条款及本软件已经发布的或将来可能发布的各类规则。所有规则为本协议不可分割的一部分，与协议正文具有同等法律效力。本协议是您与本软件共同签订的，适用于您在本软件的全部活动。在您注册成为用户时，您已经阅读、理解并接受本协议的全部条款及各类规则，并承诺遵守中国的各类法律规定，如有违反而导致任何法律后果的发生，您将以自己的名义独立承担所有相应的法律责任。\n
+        1.3本软件有权根据需要不时地修改本协议或根据本协议制定、修改各类具体规则并在本软件相关系统板块发布，无需另行单独通知您。您应不时地注意本协议及具体规则的变更，若您在本协议及具体规则内容公告变更后继续使用本服务的，表示您已充分阅读、理解并接受修改后的协议和具体规则内容，也将遵循修改后的协议和具体规则使用本软件的服务；同时就您在协议和具体规则修订前通过本软件进行的交易及其效力，视为您已同意并已按照本协议及有关规则进行了相应的授权和追认。若您不同意修改后的协议内容，您应停止使用本软件的服务。\n
+        1.4您通过自行或授权有关方根据本协议及本软件有关规则、说明操作确认本协议后，本协议即在您和本软件之间产生法律效力。本协议不涉及您与本软件的其他用户之间因网上交易而产生的法律关系或法律纠纷，但您在此同意将全面接受和履行与本软件其他用户在本软件签订的任何电子法律文本，并承诺按该等法律文本享有和/或放弃相应的权利、承担和/或豁免相应的义务。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="二、 服务的提供"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        2.1本软件提供的服务包括但不限于：资金充值、提现等，具体详情以本软件当时提供的服务内容为准。\n
+        2.2基于运行和交易安全的需要，本软件可以暂时停止改变本软件服务的部分功能，或提供新的功能。在任何功能减少、增加或者变化时，只要您仍然使用本软件的服务，表示您仍然同意本协议或者变更后的协议。\n
+        2.3您确认，您在本软件上按本软件服务流程所确认的交易状态将成为本软件为您进行相关交易或操作（包括但不限于冻结资金）的明确指令。您同意本软件有权按相关指令依据本协议和/或有关文件和规则对相关事项进行处理。\n
+        2.4您未能及时对交易状态进行修改或确认或未能提交相关申请所引起的任何纠纷或损失由您本人负责，本软件不承担任何责任。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="三、 交易管理及费用"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        3.1在您成功注册后，您可以自行或授权您的代理人根据本软件有关规则和说明，通过本软件确认签署有关协议并经本软件审核通过后实现借款需求或资金的出借（出借方式包括但不限于向借款人直接出借或受让债权等形式）。详细操作规则及方式请见有关协议及本软件相关页面的规则和说明。\n
+        3.2本软件将为您的借款、还款或资金的出借、回收等交易提供服务，并在服务过程中根据有关文件、协议和/或本软件页面的相关规则、说明等收取必要的服务或管理费用，其具体内容、比例、金额等事项请参见有关文件及本软件相关页面的规则和说明（包括但不限于，就您每一笔成功转让的债权，本软件有权基于您所转让债权的金额向您收取一定比例的转让管理费等款项作为服务费用，具体比例及金额等请参见本软件的债权转让相关规则和说明）。您同意，本软件有权不时调整前述服务或管理费用的类型或金额等具体事项并根据本协议和相关规则进行公告、修改。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="四、 知识产权声明"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        4.1本工作室依法享有本软件的一切合法权属（包括但不限于知识产权）。本软件的全部著作权及一切其他知识产权，以及与本软件相关的所有信息内容，包括但不限于：美术资源、音乐资源、文字表述及其组合、图标、图饰、图表、色彩组合、界面设计、版面框架、有关数据、印刷材料和电子文档等均受中国知识产权相关法律法规和有关的国际条约的保护。\n
+        4.2如您发现本软件及网站内存在任何侵犯您权利的内容，请立即通知本工作室，说明您的诉求并提供您享有相关权利的初步证据材料，本公司将会及时处理您的诉求。/n
+        4.3本工作室在涉及本软件及相关各项服务中拥有专利权、专利申请权、商标权、著作权及其他知识产权。本工作室并未因为本《协议》或者因为向用户提供本软件以及相关服务而授予用户任何与本软件相关的知识产权。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="五、 电子合同"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        5.1在本软件平台交易需订立的协议采用电子合同方式，可以有一份或者多份并且每一份具有同等法律效力。您或您的代理人根据有关协议及本软件的相关规则在本软件确认签署的电子合同即视为您本人真实意愿并以您本人名义签署的合同，具有法律效力。您应妥善保管自己的账户密码等账户信息，您通过前述方式订立的电子合同对合同各方具有法律约束力，您不得以账户密码等账户信息被盗用或其他理由否认已订立的合同的效力或不按照该等合同履行相关义务。\n
+        5.2您根据本协议以及本软件的相关规则签署电子合同后，不得擅自修改该合同。本软件向您提供电子合同的保管查询、核对等服务，如对电子合同真伪或电子合同的内容有任何疑问，您可通过本软件的相关系统板块查阅有关合同并进行核对。如对此有任何争议，应以本软件记录的合同为准。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="六、 用户信息及隐私权保护"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        尊重用户个人隐私是本工作室的一项基本政策，所以，本工作室不会公开、修改或透露用户的注册资料及保存在本工作室各项服务中的非公开内容，除非本工作室在诚信的基础上认为透露这些信息是必要的，包括但不限于以下情形："
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        6.1 遵守有关法律法规规定，包括在国家有关机关查询时，提供用户在网易公司的网页上发布的信息内容及其发布时间、互联网地址或者域名。\n
+        6.2 保持维护网易公司的知识产权和其他重要权利。\n
+        6.3 在紧急情况下竭力维护用户个人和社会大众的隐私安全。\n
+        6.4本工作室对不可抗力导致的损失不承担责任。本许可协议所指不可抗力包括：天灾、法律法规或政府指令的变更，因网络服务特性而特有的原因，例如境内外基础电信运营商、平台方的故障、计算机、移动设备或互联网相关技术缺陷、突发性的软硬件设备及电子通信设备故障、互联网覆盖范围限制、计算机或移动设备病毒、黑客攻击等因素，及其他合法范围内的不能预见、不能避免并不能克服的客观情况。
+"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="七、 不保证及使用限制"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        7.1不保证\n
+        7.1.1在任何情况下，本软件及其股东、创建人、高级职员、董事、代理人、关联公司、母公司、子公司和雇员（以下称“本软件方”）均不以任何明示或默示的方式对您使用本软件服务而产生的任何形式的直接或间接损失承担法律责任，包括但不限于资金损失、利润损失、营业中断损失等，无论您通过本软件形成的借贷关系是否适用本软件的风险备用金规则或者是否存在第三方担保，并且本软件方不保证网站内容的真实性、充分性、及时性、可靠性、完整性和有效性，并且免除任何由此引起的法律责任。\n
+        7.1.2本软件不能保证也没有义务保证第三方网站上的信息的真实性和有效性。您应按照第三方网站的服务协议使用第三方网站，而不是按照本协议。第三方网站的内容、产品、广告和其他任何信息均由您自行判断并承担风险，而与本软件无关。\n
+        7.1.3因为本软件或者涉及的第三方网站的设备、系统存在缺陷、黑客攻击、网络故障、电力中断、计算机病毒或其他不可抗力因素造成的损失，本软件均不负责赔偿，您的补救措施只能是与本软件协商终止本协议并停止使用本软件。但是，中国现行法律、法规另有规定的除外。\n
+        7.2使用限制\n
+        7.2.1您承诺合法使用本软件提供的服务及网站内容。您不得利用本服务从事侵害他人合法权益之行为，不得在本软件从事任何可能违反中国的法律、法规、规章和政府规范性文件的行为或者任何未经授权的行为，如擅自进入本软件的未公开的系统、不正当的使用账号密码和网站的任何内容等。\n
+        7.2.2您不得使用本软件提供的服务或其他电子邮件转发服务发出垃圾邮件或其他可能违反本协议的内容。\n
+        7.2.3本软件没有义务监测网站内容，但是您确认并同意本软件有权不时地根据法律、法规、政府要求透露、修改或者删除必要的信息，以便更好地运营本软件并保护自身及本软件的其他合法用户。\n
+        7.2.4本软件中全部内容的版权均属于本软件所有，该等内容包括但不限于文本、数据、文章、设计、源代码、软件、图片、照片及其他全部信息（以下称“网站内容”）。网站内容受中华人民共和国著作权法及各国际版权公约的保护。未经本软件事先书面同意，您承诺不以任何方式、不以任何形式复制、模仿、传播、出版、公布、展示网站内容，包括但不限于电子的、机械的、复印的、录音录像的方式和形式等。您承认网站内容是属于本软件的财产。未经本软件书面同意，您亦不得将本软件包含的资料等任何内容镜像到任何其他网站或者服务器。任何未经授权对网站内容的使用均属于违法行为，本软件将追究您的法律责任。\n
+        7.2.5由于您违反本协议或任何法律、法规或侵害第三方的权利，而引起第三方对本软件提出的任何形式的索赔、要求、诉讼，本软件有权向您追偿相关损失，包括但不限于本软件的法律费用、名誉损失、及向第三方支付的补偿金等。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="八、 权利和义务"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        6.1 在用户同意接受本《协议》全部内容的前提下，本工作室同意授予用户可撤销的、可变更的、非专有的、不可转让和不可再授权的许可权利。用户可在许可生效的时间内将本软件安装在个人使用的联网计算机或移动设备上，并以指定的方式运行本软件的一份副本并享受本工作室提供的服务。本工作室基于本《协议》授予用户的许可是针对个人使用的许可。如用户有需要在个人使用的范围以外使用本软件及服务或者将本软件与服务用于任何商业用途，则用户应与本工作室联系并获得本工作室另行授权。任何未经本工作室许可的安装、使用、访问、显示、运行等行为均视为违反本协议。
+
+        6.2 除非本《协议》另有规定，否则，未经本工作室书面同意，用户不得实施下列行为（无论是营利的还是非营利的）：
+
+        6.2.1 复制、翻拷、传播和陈列本软件的程序、使用手册和其它图文音像资料的全部或部分内容。
+
+        6.2.2 公开展示和播放本产品的全部或部分内容。
+
+        6.2.3 出租、销售本软件或者利用本软件从事营利行为。
+
+        6.2.4 修改或遮盖本软件程序、图像、动画、包装和手册等内容上的产品名称、公司标志、版权信息等内容。
+
+        6.2.5 其它违反著作权法、计算机软件保护条例和相关法律法规的行为。
+
+        6.3 用户应通过合法的途径使用本软件和相关服务，不得作出以下侵害本工作室或第三人利益，违反本《协议》或者本工作室发布的其他规则或者国家有关法律法规规定的行为，包括但不限于：
+
+        6.3.1 修改、翻译、注释、整理、汇编、演绎本软件；
+
+        6.3.2 反向工程、反向编译或者反汇编本软件，或者采用其他技术手段对本软件进行分析、修改、攻击、衍生；
+
+        6.3.3 使用任何外挂程序或修改程序（本《协议》所称“外挂程序”是指独立于软件之外的，能够在软件运行的同时影响软件操作的所有程序，包括但不限于模拟键盘鼠标操作、改变操作环境、修改数据等一切类型。如国家有关法律、法规及政府主管部门的规章或规范性文件规定的外挂定义与本《协议》有冲突，则以法律、法规、部门规章或规范性文件规定的为准），对本软件进行还原工程、编译、译码或修改，包括但不限于修改本软件所使用的任何专有通讯协议、对动态随机存取内存（RAM）中资料进行修改或锁定；
+
+        6.3.4 使用异常的方法使用本软件、使用网络加速器等外挂软件或机器人程式等恶意破坏服务设施、扰乱正常服务秩序的行为；
+
+        6.3.5 通过异常或者非法方式使用本软件，恶意破环本软件，扰乱正常的服务秩序或者实施其他不正当行为；
+
+        6.3.6 制作、传播或使用外挂、封包、加速软件及其它各种作弊程序，或组织、教唆他人使用此类软件程序，或销售此类软件程序而为个人或组织谋取经济利益；
+
+        6.3.7 使用任何方式或方法，试图攻击提供本软件服务的相关服务器、路由器、交换机以及其他设备，以达到非法获得或修改未经授权的数据资料、影响正常服务，以及其他危害性目的的任何行为；
+
+        6.3.8 利用本软件可能存在的技术缺陷或漏洞而以各种形式为自己及他人牟利或者从事其他不正当行为。
+
+        6.3.9 违反国家有关法律法规的规定，利用本软件制作、复制、发布和传播信息。
+
+一旦本工作室通过内部的监测程序发现或经其他用户举报而发现用户有可能正在从事上述行为，则本工作室有权作出独立的判断并采取相应的措施，该措施包括但不限于限制用户使用本软件、终止本软件授权、删除用户有关的数据或信息并要求用户赔偿因从事上述行为而给本工作室造成的损失等。
+
+        6.4 本工作室提供可使用本软件，并运用自己的网络系统通过国际互联网络（Internet）为用户提供服务。同时，用户应自行提供以下的设备和信息：
+
+        6.4.1 自行配备上网的所需设备， 包括个人电脑、调制解调器、移动设备(包括但不限于手机、平板电脑等)或其他必备上网装置；
+
+        8.4.2 自行负担个人上网所支付的与此服务有关的电话费用、网络费用；
+
+        8.4.3 基于本工作室提供服务的重要性，用户同意：
+
+        （1）提供详尽、准确的个人资料。
+
+        （2）不断更新资料，符合及时、详尽、准确的要求。
+
+        （3）牢记用户填写的资料、历史信息。
+
+        8.5 本工作室保留通过本软件和相关的服务向用户投放商业性广告的权利。
+
+        8.6 用户对其发布的内容负全部责任，所有用户不得发布含有下列内容之一的信息，否则本工作室有权自行处理，包括但不限于删除发布内容，禁止用户登录等或发布等处理措施：
+
+        (1)违反宪法确定的基本原则的；
+
+        (2)危害国家安全，泄漏国家机密，颠覆国家政权，破坏国家统一的；
+
+        (3)损害国家荣誉和利益的；
+
+        (4)煽动民族仇恨、民族歧视，破坏民族团结的；
+
+        (5)破坏国家宗教政策，宣扬邪教和封建迷信的；
+
+        (6)散布谣言，扰乱社会秩序，破坏社会稳定的；
+
+        (7)散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；
+
+        (8)侮辱或者诽谤他人，侵害他人合法权益的；
+
+        (9)煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；
+
+        (10)以非法民间组织名义活动的；
+
+        (11)发布任何经本工作室合理判断后认为不妥当或者未经本工作室认可的软件、文件等在内的主页地址或者链接，等；
+
+        (12)含有法律、行政法规禁止的其他内容的。
+
+        8.7如用户发布的内容侵犯任何第三方的知识产权、名誉权、姓名权、隐私权等权利及合法权益的，本工作室有权在收到权利方或者相关方通知的情况下移除该涉嫌侵权内容。
+
+        8.8 用户知悉并明确同意，就用户发布的全部内容，在发布之时不可撤销地授予本工作室及其关联公司一项全球性的、可转授权的、永久的免费许可，允许本工作室及其关联公司使用、传播、复制、修改、再许可、翻译、出版、表演及展示此等内容之全部或一部分，以及使用此等内容创作衍生作品。特别提及的是，本工作室可转授权本软件其他用户免费使用该等发布内容。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="九、 通知"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        本协议项下的通知如以公示方式作出，一经在本软件公示即视为已经送达。除此之外，其他向您个人发布的具有专属性的通知将由本软件向您在注册时提供的电子邮箱，或本软件在您的个人账户中为您设置的站内消息系统栏，或您在注册后在本软件绑定的手机发送，一经发送即视为已经送达。请您密切关注您的电子邮箱 、站内消息系统栏中的邮件、信息及手机中的短信信息。您同意本软件出于向您提供服务之目的，可以向您的电子邮箱、站内消息系统栏和手机发送有关通知或提醒；若您不愿意接收，请在本软件相应系统板块进行设置。但您同时同意并确认，若您设置了不接收有关通知或提醒，则您有可能收不到该等通知信息，您不得以您未收到或未阅读该等通知信息主张相关通知未送达于您。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="十、 适用法律和管辖"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        因本软件所提供服务而产生的争议均适用中华人民共和国法律，并由本软件住所地的人民法院管辖。"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="十一、 其他"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+        本软件对本协议拥有最终的解释权。本协议及本软件有关页面的相关名词可互相引用参照，如有不同理解，则以本协议条款为准。此外，若本协议的部分条款被认定为无效或者无法实施时，本协议中的其他条款仍然有效。"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

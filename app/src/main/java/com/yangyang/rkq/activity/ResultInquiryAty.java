@@ -15,8 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.yangyang.rkq.R;
 import com.yangyang.rkq.Utils.ConstantsUtil;
 import com.yangyang.rkq.Utils.WebLoader;
+import com.yangyang.rkq.base.MyActivity;
 
-public class ResultInquiryAty extends AppCompatActivity {
+public class ResultInquiryAty extends MyActivity {
     private WebView webView;
 
     public static void start(Context context, String url){

@@ -14,11 +14,14 @@ import com.yangyang.rkq.Body.SearchBean;
 import com.yangyang.rkq.R;
 import com.yangyang.rkq.View.SearchView;
 import com.yangyang.rkq.adapter.SearchAdapter;
+import com.yangyang.rkq.base.MyActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * 搜索
+ */
 public class SearchActivity extends Activity implements SearchView.SearchViewListener {
 
     /**

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">renkequan</string>
+    <string name="scan_qr_code_warn">将二维码放入框内，即可自动扫描</string>
+    <string name="scan_qr_code_from_photo_wrong">没有找到二维码</string>
+    <string name="album_text">相册</string>
+    <string name="identify_qr">识别二维码</string>
+    <string name="cancel">取消</string>
+    <string name="save_pic">保存图片</string>
 </resources>
