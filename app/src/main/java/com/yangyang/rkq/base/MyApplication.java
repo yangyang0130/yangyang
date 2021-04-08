@@ -16,6 +16,8 @@ import com.yangyang.rkq.Body.LogonBody;
 import com.yangyang.rkq.R;
 import com.yangyang.rkq.db.SQLiteHelper;
 
+import cn.smssdk.SMSSDK;
+
 public class MyApplication extends Application {
 
     @Override
@@ -55,5 +57,7 @@ public class MyApplication extends Application {
      */
     private void initSDK() {
         SQLiteHelper.with(this).createTable(LogonBody.class);
+//        SQLiteHelper.with(this).dropTable(LogonBody.class.getSimpleName());
+
     }
 }

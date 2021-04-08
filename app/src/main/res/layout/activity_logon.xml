@@ -105,9 +105,9 @@
                 android:layout_marginLeft="20dp"
                 android:src="@mipmap/password" />
 
-            <com.yangyang.rkq.View.layout.ClearEditText
+            <EditText
                 style="@style/EditTextStyle"
-                android:id="@+id/editText_phone"
+                android:id="@+id/editText_code"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_centerVertical="true"
@@ -122,7 +122,7 @@
 
 
             <com.yangyang.rkq.View.layout.CountdownView
-                android:id="@+id/code"
+                android:id="@+id/cv_code"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -179,7 +179,7 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/logon_code"
+            android:id="@+id/btn_logon_code"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
